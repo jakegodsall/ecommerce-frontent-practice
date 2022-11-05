@@ -27,3 +27,41 @@
 .header__user-icon {
     width: 3rem;
 }
+
+/* hamburger menu */
+.header__hamburger-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-inline: 1.5rem;
+
+    position: relative;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    background-color: inherit;
+}
+
+.header__hamburger-button div {
+    background-color: var(--very-dark-blue);
+    height: 3px;
+    width: 100%;
+    transform: translateY(-1px);
+}
+
+.header__hamburger-button::before,
+.header__hamburger-button::after {
+    background-color: var(--very-dark-blue);
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    content: '';
+}
+
+.header__hamburger-button::before {
+    top: 0;
+}
+
+.header__hamburger-button::after {
+    bottom: 0;
+}

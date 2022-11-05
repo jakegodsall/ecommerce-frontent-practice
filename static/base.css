@@ -37,3 +37,7 @@ a:active {
 .main-container {
     width: 80vw;
 }
+
+button {
+    border: none;
+}
