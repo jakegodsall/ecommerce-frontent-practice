@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 1.5rem;
+}
+
+.header__navbar ul {
+    display: flex;
+}
+
+.header__navbar ul li {
+    padding-inline: 1rem;
+}
+
+.header__user {
+    margin-inline: auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+}
+
+.header__user-cart {
+}
+
+.header__user-icon {
+    width: 3rem;
+}

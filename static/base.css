@@ -1,0 +1,24 @@
+:root {
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul,
+li {
+    margin-left: 0;
+    list-style: none;
+}
+
+a,
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+.main-container {
+    width: 80vw;
+}

@@ -8,11 +8,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{% block title_block %}{% endblock %}</title>
         {% block css_block %}{% endblock %}
-        <link rel="stylesheet" href="{% static 'static/base.html' %}">
+        <link rel="stylesheet" href="{% static 'base.css' %}">
+        <link rel="stylesheet" href="{% static 'partials/header.css' %}">
     </head>
     <body>
-        
-        {% block javascript_block %}
-        {% endblock %}
+        <div class="main-container">
+            {% include 'partials/header.html' %}
+            {% block content_block %}{% endblock %}
+            {% block javascript_block %}{% endblock %}
+        </div>
     </body>
 </html>
