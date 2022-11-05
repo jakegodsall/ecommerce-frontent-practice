@@ -56,6 +56,7 @@
     width: 100%;
     position: absolute;
     content: '';
+    transition: all 0.3s ease-in-out;
 }
 
 .header__hamburger-button::before {
@@ -64,4 +65,25 @@
 
 .header__hamburger-button::after {
     bottom: 0;
+}
+
+/* Hamburger button animation */
+.header__hamburger-button.opened div {
+    display: none;
+}
+
+.header__hamburger-button.opened::before,
+.header__hamburger-button.opened::after {
+    margin-top: 0.7rem;
+}
+
+.header__hamburger-button.opened::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+.header__hamburger-button.opened::after {
+    bottom: 0;
+    top: 0;
+    transform: rotate(315deg);
 }
