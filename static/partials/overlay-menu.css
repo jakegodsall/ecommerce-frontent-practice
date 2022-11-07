@@ -1,0 +1,29 @@
+.outer-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(80, 80, 80, 0.2);
+}
+
+.outer-overlay.active {
+    display: block;
+}
+
+.overlay-menu {
+    position: absolute;
+    background-color: var(--white);
+    width: 65%;
+    height: 100vh;
+}
+
+.overlay-menu__nav {
+    margin-top: 8rem;
+    font-weight: var(--bold);
+    font-size: 1.2rem;
+}
+
+.overlay-menu__nav li {
+    margin-bottom: 1.5rem;
+}
