@@ -41,3 +41,14 @@ a:active {
 button {
     border: none;
 }
+
+/* Tablet layout */
+@media screen and (max-width: 900px) {
+}
+
+/* Mobile layout */
+@media screen and (max-width: 450px) {
+    .main-container {
+        width: 100vw;
+    }
+}
